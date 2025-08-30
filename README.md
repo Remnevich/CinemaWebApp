@@ -1,12 +1,40 @@
-# React + Vite
+# 🎬 Movie Cards App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small application for displaying movies in cards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** + **Vite** — fast and modern build tool with great developer experience.
+- **MobX** — state management for the app.
+- **Axios** — simplified HTTP requests.
+- **React Spinners** — beautiful loading indicators.
+- **Skeletons** — for smooth and elegant loading of movie cards.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚡ Main Features
+
+- Fetch movies from an API.
+- State management with `MobX`.
+- Display movie cards with poster, title, date, and description.
+- Support for skeletons and spinners for a pleasant UX during loading.
+- Fallback to a default poster if a movie has no image.
+
+---
+
+## 🚀 How to Run
+
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview the built project
+npm run preview

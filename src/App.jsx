@@ -1,12 +1,9 @@
-import './App.css'
+import {CardsContainer} from "./components/cardsContainer/index.jsx";
 
 function App() {
-
-  return (
-    <>
-      Проект Кино
-    </>
-  )
+    return (
+        <CardsContainer/>
+    );
 }
 
 export default App

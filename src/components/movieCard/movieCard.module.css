@@ -1,0 +1,65 @@
+.cardWrapper {
+    padding: 5px;
+    background-color: #f2f9d6;
+    color: black;
+    max-width: 410px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.poster {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.noImg {
+    min-width: 400px;
+    min-height: 300px;
+    background-color: #4ea7ff;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(1rem, 0.818rem + 0.7767vw, 1.75rem);
+}
+
+.message {
+    font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+    padding-bottom: 10px;
+}
+
+.timeStamp {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #9f9f9f;
+    align-items: flex-end;
+    font-size: clamp(0.5rem, 0.4393rem + 0.2589vw, 0.75rem);
+}
+
+@media (max-width: 880px)  {
+    .cardWrapper {
+        max-width: 280px;
+        height: 400px;
+    }
+
+    .poster {
+        max-height: 200px;
+    }
+
+    .noImg {
+        min-width: 270px;
+        min-height: 200px;
+        background-color: #4ea7ff;
+        border-radius: 10px;
+    }
+
+}

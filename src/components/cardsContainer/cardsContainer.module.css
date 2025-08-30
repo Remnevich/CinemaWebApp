@@ -1,0 +1,48 @@
+.wrapper {
+    position: relative;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.arrowWrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.arrowWrapper:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrow {
+    border: solid lightgray;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.arrowLeft {
+    transform: rotate(135deg);
+}
+
+.arrowRight {
+    transform: rotate(-45deg);
+}
